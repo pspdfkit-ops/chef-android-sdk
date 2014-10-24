@@ -1,7 +1,17 @@
 #
 # Install required libraries
 #
-# TODO: put packages names into attributes
+# TODO: put packages names into attributes, clean up this mess
+
+# include_recipe 'apt'
+#
+# # debian specific 32bit libs via https://wiki.debian.org/Multiarch/HOWTO  (bottom)
+# execute 'add i386 arch' do
+#   command 'dpkg --add-architecture i386'
+#   not_if 'grep i386 /var/lib/dpkg/arch'
+#   notifies :run, 'execute[apt-get update]', :immediately
+# end
+
 
 
 package 'expect'
