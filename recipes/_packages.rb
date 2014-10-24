@@ -30,4 +30,5 @@ elsif node['platform'] == 'debian' && node['kernel']['machine'] == 'i686'
     libncurses5:i386
   ).each do |pkg|
     package pkg
+  end
 end
