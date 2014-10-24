@@ -13,7 +13,7 @@ end
 recommends 'maven'  # Maven 3.1.1+ is required by android-sdk::maven-rescue recipe
 
 supports 'ubuntu', '>= 12.04'
-supports 'debian', '=> 7.0'
+supports 'debian', '>= 7.0'
 
 # Support for more platforms is on the road (e.g. Debian, CentOS,...).
 # Please watch or help on https://github.com/gildegoma/chef-android-sdk/issues/5
