@@ -23,7 +23,6 @@ node['android-sdk']['components'].each do |sdk_component|
     environment(
       'ANDROID_HOME' => android_home
     )
-    path [File.join(android_home, 'tools')]
     user node['android-sdk']['owner']
     group node['android-sdk']['group']
     # TODO: use --force or not?
